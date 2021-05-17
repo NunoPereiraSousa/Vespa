@@ -2,14 +2,15 @@
   position: fixed;
   left: 0%;
   top: 0%;
-  z-index: 9;
+  z-index: 999;
   width: 100%;
 
-  padding: 1.5rem 2rem 0;
+  padding: 1.5rem 1rem 0;
 
-  display: grid;
-  justify-items: center;
-  row-gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 1.5rem;
 
   @include breakpoint-up(desktop) {
     display: flex;
@@ -18,7 +19,7 @@
   }
 
   img {
-    width: 6.25rem;
+    width: 5.25rem;
 
     @include breakpoint-up(tablet) {
       width: 7.5rem;
@@ -35,9 +36,9 @@
 
     a {
       color: $black;
-      margin-right: 2rem;
+      margin-right: 1.5rem;
 
-      font-size: 1rem;
+      font-size: 0.9375rem;
       font-weight: 600;
 
       &:last-child {
@@ -46,6 +47,7 @@
 
       @include breakpoint-up(tablet) {
         font-size: 1.25rem;
+        margin-right: 2rem;
       }
 
       @include breakpoint-up(desktop) {
