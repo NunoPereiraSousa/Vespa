@@ -1,0 +1,56 @@
+.nav {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  z-index: 9;
+  width: 100%;
+
+  padding: 1.5rem 2rem 0;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 2rem;
+
+  @include breakpoint-up(desktop) {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem 0;
+  }
+
+  img {
+    width: 6.25rem;
+
+    @include breakpoint-up(tablet) {
+      width: 7.5rem;
+    }
+
+    @include breakpoint-up(desktop) {
+      width: 6.25rem;
+    }
+  }
+
+  &_links {
+    display: flex;
+    align-items: center;
+
+    a {
+      color: $black;
+      margin-right: 2rem;
+
+      font-size: 1rem;
+      font-weight: 600;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include breakpoint-up(tablet) {
+        font-size: 1.25rem;
+      }
+
+      @include breakpoint-up(desktop) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+body.light {
+  .header {
+    &__logo {
+      color: $dark !important;
+    }
+
+    #toggleTheme {
+      color: $dark !important;
+
+      div > div {
+        transform: translateY(100%);
+        transition: all 0.4s ease-out;
+      }
+    }
+
+    &__hamburger {
+      &::before,
+      &::after {
+        background-color: $dark;
+      }
+    }
+
+    &__desktop_menu {
+      a {
+        color: $dark;
+      }
+    }
+  }
+
+  .mobile_section,
+  .desktop_section {
+    h1,
+    h3,
+    h5 {
+      color: $dark;
+    }
+
+    path {
+      fill: $dark !important;
+    }
+  }
+
+  .mobile_section {
+    h3,
+    h5 {
+      font-weight: 500;
+    }
+
+    border-bottom: 2px solid $dark;
+  }
+
+  .desktop_section {
+    &::after {
+      background-color: rgba($color: $dark, $alpha: 0.5);
+    }
+  }
+
+  .cursor.nightTheme {
+    background-color: $dark;
+  }
+
+  .cursor-follower.nightTheme {
+    border-color: $dark;
+  }
+
+  .socials__card {
+    color: $dark;
+  }
+
+  .header__carousel,
+  .carousel {
+    h2 {
+      color: $dark;
+    }
+  }
+
+  .services__grid__article {
+    h3,
+    h4 {
+      color: $dark;
+    }
+
+    border-bottom: 1px solid rgba($color: $dark, $alpha: 0.2);
+
+    &:first-child {
+      border-top: 1px solid rgba($color: $dark, $alpha: 0.2);
+    }
+  }
+
+  .showcase__grid__article {
+    h5,
+    h4 {
+      color: $dark;
+    }
+  }
+
+  .hobbies__grid__card {
+    p {
+      color: $dark;
+
+      &:first-child {
+        text-decoration: underline rgba($color: $dark, $alpha: 0.7);
+
+        @include breakpoint-up(desktop) {
+          text-decoration: underline rgba($color: $dark, $alpha: 0.5);
+        }
+      }
+    }
+  }
+
+  .contacts {
+    background-color: $dark;
+
+    h3,
+    a {
+      color: $dark;
+    }
+
+    &__email {
+      a {
+        color: rgba($color: $red, $alpha: 0.9);
+      }
+    }
+  }
+
+  .presentation {
+    h1,
+    h3,
+    a {
+      color: $dark;
+    }
+
+    .open_work {
+      text-decoration: underline $dark;
+    }
+  }
+
+  .about {
+    h4 {
+      color: $dark;
+    }
+  }
+
+  .presentation__svgs {
+    svg {
+      &#Circle01 {
+        path {
+          fill: $dark !important;
+        }
+
+        text {
+          fill: $dark !important;
+        }
+      }
+      &#arrow {
+        path {
+          stroke: $dark !important;
+        }
+      }
+    }
+  }
+
+  /* ABOUT PAGE */
+
+  .about__presentation {
+    color: $dark;
+
+    svg {
+      &#Circle01 {
+        path {
+          fill: $dark !important;
+        }
+
+        text {
+          fill: $dark !important;
+        }
+      }
+      &#arrow {
+        path {
+          stroke: $dark !important;
+        }
+      }
+    }
+  }
+
+  .awards__grid__card {
+    h3,
+    h2,
+    p {
+      color: $dark;
+    }
+  }
+
+  .about__contact {
+    h3,
+    h2,
+    a {
+      color: $dark;
+    }
+
+    a.open_work {
+      color: $red;
+    }
+  }
+
+  /* PROJECTS PAGE */
+
+  .projects__presentation {
+    color: $dark;
+
+    svg {
+      &#Circle01 {
+        circle {
+          fill: $dark !important;
+        }
+
+        text {
+          fill: $dark !important;
+        }
+      }
+      &#arrow {
+        path {
+          stroke: $dark !important;
+        }
+      }
+    }
+  }
+
+  .projects_showcase__title {
+    color: $dark;
+  }
+
+  .projects_showcase__grid__card {
+    h1,
+    a {
+      color: $dark;
+    }
+  }
+
+  /* CURSOR */
+
+  .cursor-follower.open_work_cursor.nightTheme {
+    border-color: $red !important;
+  }
+
+  #bigName {
+    fill: $dark;
+  }
+}
